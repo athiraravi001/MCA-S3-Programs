@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f5f6fa"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <!-- Form Card -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#FFFFFF"
+            android:elevation="8dp"
+            android:padding="24dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="40dp"
+            android:layout_marginHorizontal="8dp">
+
+            <!-- Title -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sign Up &amp; Join Us!"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                android:textColor="#1877F2"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="24dp"/>
+
+            <!-- Name Field -->
+            <EditText
+                android:id="@+id/rname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter your name"
+                android:inputType="textPersonName"
+                android:padding="14dp"
+                android:backgroundTint="#d1d5db"
+                android:textSize="16sp"
+                android:layout_marginBottom="16dp"
+                android:background="@android:drawable/edit_text"/>
+
+            <!-- Email Field -->
+            <EditText
+                android:id="@+id/remail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter your email"
+                android:inputType="textEmailAddress"
+                android:padding="14dp"
+                android:backgroundTint="#d1d5db"
+                android:textSize="16sp"
+                android:layout_marginBottom="16dp"
+                android:background="@android:drawable/edit_text"/>
+
+            <!-- Gender Selection -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gender"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp"
+                android:textSize="16sp"/>
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="16dp">
+
+                <RadioButton
+                    android:id="@+id/rmale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Male"
+                    android:buttonTint="#1877F2"/>
+
+                <RadioButton
+                    android:id="@+id/rfemale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Female"
+                    android:layout_marginStart="16dp"
+                    android:buttonTint="#1877F2"/>
+
+                <RadioButton
+                    android:id="@+id/rother"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Other"
+                    android:layout_marginStart="16dp"
+                    android:buttonTint="#1877F2"/>
+            </RadioGroup>
+
+            <!-- DOB Field -->
+            <EditText
+                android:id="@+id/rdob"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Date of Birth (dd/mm/yyyy)"
+                android:inputType="date"
+                android:padding="14dp"
+                android:backgroundTint="#d1d5db"
+                android:textSize="16sp"
+                android:layout_marginBottom="16dp"
+                android:background="@android:drawable/edit_text"/>
+
+            <!-- Password Field -->
+            <EditText
+                android:id="@+id/rpswrd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter password"
+                android:inputType="textPassword"
+                android:padding="14dp"
+                android:backgroundTint="#d1d5db"
+                android:textSize="16sp"
+                android:layout_marginBottom="16dp"
+                android:background="@android:drawable/edit_text"/>
+
+            <!-- Privacy Checkbox -->
+            <CheckBox
+                android:id="@+id/rcheck"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                android:text="Agree Privacy and Policy"
+                android:textColor="#333333" />
+
+            <!-- Register Button -->
+            <Button
+                android:id="@+id/rsubmit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#1877F2"
+                android:onClick="onClick"
+                android:padding="14dp"
+                android:text="Register"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
