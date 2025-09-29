@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ECEFF1">
+
+    <!-- Instagram Section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center">
+
+        <ImageButton
+            android:id="@+id/img1"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:backgroundTint="#FFFFFF"
+            android:elevation="4dp"
+            android:onClick="onClick1"
+            android:scaleType="centerInside"
+            android:contentDescription="Instagram"
+            app:srcCompat="@drawable/instagram" />
+    </LinearLayout>
+
+    <!-- WhatsApp Section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center">
+
+        <ImageButton
+            android:id="@+id/img2"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:backgroundTint="#FFFFFF"
+            android:elevation="4dp"
+            android:onClick="onClick2"
+            android:scaleType="centerInside"
+            android:contentDescription="WhatsApp"
+            app:srcCompat="@drawable/whatsapp" />
+    </LinearLayout>
+
+    <!-- Twitter Section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center">
+
+        <ImageButton
+            android:id="@+id/img3"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:backgroundTint="#FFFFFF"
+            android:elevation="4dp"
+            android:onClick="onClick3"
+            android:scaleType="centerInside"
+            android:contentDescription="Twitter"
+            app:srcCompat="@drawable/twitter" />
+    </LinearLayout>
+
+</LinearLayout>
