@@ -1,62 +1,87 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".MainActivity" >
+    android:background="#EAF0F7"
+    tools:context=".MainActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="91dp"
-        android:orientation="vertical">
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="32dp">
 
+        <!-- Title -->
         <TextView
-            android:id="@+id/uname"
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome Back!"
+            android:textColor="#2A3B8F"
+            android:textStyle="bold"
+            android:textSize="30sp"
+            android:layout_marginBottom="40dp" />
+
+        <!-- Username Label -->
+        <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Username : " />
+            android:text="Username"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#37474F"
+            android:layout_marginBottom="6dp" />
 
+        <!-- Username Input -->
         <EditText
             android:id="@+id/etname"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:ems="10"
-            android:inputType="text" />
-    </LinearLayout>
+            android:hint="Enter your username"
+            android:padding="14dp"
+            android:textColor="#000000"
+            android:textColorHint="#9E9E9E"
+            android:backgroundTint="#3F51B5"
+            android:layout_marginBottom="20dp"
+            android:inputType="textPersonName" />
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="101dp"
-        android:orientation="vertical">
-
+        <!-- Password Label -->
         <TextView
-            android:id="@+id/pswrd"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Password : " />
+            android:text="Password"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#37474F"
+            android:layout_marginBottom="6dp" />
 
+        <!-- Password Input -->
         <EditText
             android:id="@+id/etpwd"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:ems="10"
+            android:hint="Enter your password"
+            android:padding="14dp"
+            android:textColor="#000000"
+            android:textColorHint="#9E9E9E"
+            android:backgroundTint="#3F51B5"
+            android:layout_marginBottom="32dp"
             android:inputType="textPassword" />
-    </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:orientation="vertical">
-
+        <!-- Login Button -->
         <Button
             android:id="@+id/login"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:backgroundTint="#3949AB"
             android:onClick="onClick"
-            android:text="Login"
-            tools:ignore="OnClick" />
+            android:padding="14dp"
+            android:text="Sign In"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
     </LinearLayout>
-</LinearLayout>
+</ScrollView>
