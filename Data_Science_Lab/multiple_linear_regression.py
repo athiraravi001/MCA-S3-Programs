@@ -27,7 +27,7 @@ lr.fit(x_train, y_train)
 print("Intercept =", lr.intercept_)     # This is the bias term
 print("Slope =\n", lr.coef_)            # These are the weights for each input feature
 
-# Predict the target variable for both training and test sets
+# Predict the target variable for both training and testing sets
 train_pred = lr.predict(x_train)
 test_pred = lr.predict(x_test)
 
@@ -42,5 +42,5 @@ print("Mean absolute error: ", mean_absolute_error(y_train, train_pred))
 print("\n===== Testing performance =====")
 print("R.squared: ", r2_score(y_test, test_pred))
 print("Mean squared error: ", mean_squared_error(y_test, test_pred))
-print("Root mean squared error: ", np.sqrt(mean_squared_error(y_test, test_pred)))
+print("Root mean squared error: ", np.sqrt(mean_squared_error(y_test, test_pred))
 print("Mean absolute error :", mean_absolute_error(y_test, test_pred))
