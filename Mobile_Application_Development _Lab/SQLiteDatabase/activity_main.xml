@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Input Fields -->
+        <EditText
+            android:id="@+id/ET_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="ID"
+            android:inputType="textPersonName"
+            android:padding="12dp"
+            android:layout_marginBottom="12dp"
+            android:background="@android:drawable/edit_text"
+            android:textColor="#000000"/>
+
+        <EditText
+            android:id="@+id/ET_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Name"
+            android:inputType="textPersonName"
+            android:padding="12dp"
+            android:layout_marginBottom="12dp"
+            android:background="@android:drawable/edit_text"
+            android:textColor="#000000"/>
+
+        <EditText
+            android:id="@+id/ET_place"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Place"
+            android:inputType="textPersonName"
+            android:padding="12dp"
+            android:layout_marginBottom="20dp"
+            android:background="@android:drawable/edit_text"
+            android:textColor="#000000"/>
+
+        <!-- Buttons -->
+        <Button
+            android:id="@+id/B_submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Insert"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="#68489F"
+            android:textColor="#FFFFFF"
+            android:padding="12dp"/>
+
+        <Button
+            android:id="@+id/B_sel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="#68489F"
+            android:textColor="#FFFFFF"
+            android:padding="12dp"/>
+
+        <Button
+            android:id="@+id/B_update"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Update"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="#68489F"
+            android:textColor="#FFFFFF"
+            android:padding="12dp"/>
+
+        <Button
+            android:id="@+id/B_delete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Delete"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="#68489F"
+            android:textColor="#FFFFFF"
+            android:padding="12dp"/>
+
+        <Button
+            android:id="@+id/B_clear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Clear"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="#68489F"
+            android:textColor="#FFFFFF"
+            android:padding="12dp"/>
+
+        <!-- Display Data -->
+        <!--
+        <TextView
+            android:id="@+id/T_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ID:"
+            android:padding="12dp"
+            android:layout_marginBottom="8dp"
+            android:background="#F0F0F0"/>
+
+        <TextView
+            android:id="@+id/T_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Name:"
+            android:padding="12dp"
+            android:layout_marginBottom="8dp"
+            android:background="#F0F0F0"/>
+
+        <TextView
+            android:id="@+id/T_place"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Place:"
+            android:padding="12dp"
+            android:layout_marginBottom="8dp"
+            android:background="#F0F0F0"/>
+        -->
+
+    </LinearLayout>
+</ScrollView>
