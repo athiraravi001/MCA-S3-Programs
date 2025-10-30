@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         lv= findViewById(R.id.iv);
-        ArrayAdapter<String>adapter=new ArrayAdapter<String>(this,R.layout.layout,s);
+        ArrayAdapter adapter=new ArrayAdapter(this,R.layout.layout,s);
         lv.setAdapter(adapter);
         lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
