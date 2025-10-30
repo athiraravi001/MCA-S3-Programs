@@ -1,6 +1,5 @@
 package com.example.basiccalculator;
 
-import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -10,9 +9,9 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
     TextView number;
-    double num1=0,num2=0;
-    String op="",input="";
-    Button bt1,bt2,bt3,bt4,bt5,bt6,bt7,bt8,bt9,add,sub,mul,div,deci,equal,clear;
+    double num1 = 0, num2 = 0;
+    String op = "";
+    Button bt0, bt1, bt2, bt3, bt4, bt5, bt6, bt7, bt8, bt9, add, sub, mul, div, deci, equal, clear;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,6 +20,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         number = findViewById(R.id.etnum);
         //Numbers
+        bt0 = findViewById(R.id.b0);
         bt1 = findViewById(R.id.b1);
         bt2 = findViewById(R.id.b2);
         bt3 = findViewById(R.id.b3);
@@ -39,6 +39,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         equal = findViewById(R.id.equal);
         clear = findViewById(R.id.delete);
         //Set click listeners
+        bt0.setOnClickListener(this);
         bt1.setOnClickListener(this);
         bt2.setOnClickListener(this);
         bt3.setOnClickListener(this);
@@ -96,3 +97,56 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
     }
 }
+
+
+// ===============================================================================================
+/*
+    
+    @Override
+    public void onClick(View view) {
+        Button b = (Button) view;
+        String display = number.getText().toString();
+
+        if (view == clear) {
+            number.setText("");
+            num1 = 0;
+            num2 = 0;
+            op = "";
+        } else if (view == sub || view == add || view == mul || view == div) {
+            // Parse the first number only
+            if (!display.isEmpty()) {
+                num1 = Double.parseDouble(display);
+                op = b.getText().toString();
+                // Keep first number visible and show operator
+                number.setText(display + " " + op + " ");
+            }
+        } else if (view == equal) {
+            if (!display.isEmpty() && display.contains(op)) {
+                // Extract second number
+                String[] parts = display.split(" ");
+                if (parts.length < 3) return; // second number not entered yet
+                num2 = Double.parseDouble(parts[2]);
+
+                double result = 0;
+                if (op.equals("+")) result = num1 + num2;
+                else if (op.equals("-")) result = num1 - num2;
+                else if (op.equals("*") || op.equals("×")) result = num1 * num2;
+                else if (op.equals("/") || op.equals("÷")) {
+                    if (num2 != 0) result = num1 / num2;
+                    else {
+                        number.setText(display + " = Error");
+                        return;
+                    }
+                }
+
+                // Show full operation and result
+                number.setText(display + " = " + result);
+            }
+        } else {
+            // Append typed number or decimal
+            number.setText(display + b.getText().toString());
+        }
+    }
+}
+
+*/
