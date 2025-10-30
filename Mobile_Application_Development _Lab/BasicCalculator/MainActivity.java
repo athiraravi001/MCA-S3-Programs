@@ -57,6 +57,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         equal.setOnClickListener(this);
         clear.setOnClickListener(this);
     }
+    
     @Override
     public void onClick(View view) {
         Button b = (Button) view;
