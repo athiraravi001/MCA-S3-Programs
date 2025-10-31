@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F7FB"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:padding="32dp">
+
+        <!-- App Title -->
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign In"
+            android:textColor="#1A237E"
+            android:textStyle="bold"
+            android:textSize="28sp"
+            android:layout_marginTop="60dp"
+            android:layout_marginBottom="40dp" />
+
+        <!-- Username Label -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Username"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="#37474F"
+            android:layout_marginBottom="6dp" />
+
+        <!-- Username Input -->
+        <EditText
+            android:id="@+id/etname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter your username"
+            android:padding="14dp"
+            android:backgroundTint="#3F51B5"
+            android:textColor="#000000"
+            android:textColorHint="#9E9E9E"
+            android:layout_marginBottom="20dp"
+            android:inputType="textPersonName" />
+
+        <!-- Password Label -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Password"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="#37474F"
+            android:layout_marginBottom="6dp" />
+
+        <!-- Password Input -->
+        <EditText
+            android:id="@+id/etpwd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter your password"
+            android:padding="14dp"
+            android:backgroundTint="#3F51B5"
+            android:textColor="#000000"
+            android:textColorHint="#9E9E9E"
+            android:layout_marginBottom="30dp"
+            android:inputType="textPassword" />
+
+        <!-- Login Button -->
+        <Button
+            android:id="@+id/login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sign In"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#1E88E5"
+            android:padding="14dp"
+            android:elevation="4dp"
+            android:onClick="onClick" />
+
+    </LinearLayout>
+</ScrollView>
