@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F7FB"
+    tools:context=".MainActivity2">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:padding="32dp">
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select a Logo"
+            android:textColor="#1A237E"
+            android:textStyle="bold"
+            android:textSize="26sp"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="40dp" />
+
+        <!-- Copilot Logo -->
+        <LinearLayout
+            android:id="@+id/copilotlogo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="#FFFFFF"
+            android:elevation="4dp"
+            android:padding="24dp"
+            android:layout_marginBottom="24dp"
+            android:layout_marginHorizontal="8dp"
+            android:clickable="true"
+            android:focusable="true">
+
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:onClick="onClick1"
+                android:src="@drawable/copilot" />
+
+        </LinearLayout>
+
+        <!-- ChatGPT Logo -->
+        <LinearLayout
+            android:id="@+id/chatgptlogo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="#FFFFFF"
+            android:elevation="4dp"
+            android:padding="24dp"
+            android:layout_marginBottom="24dp"
+            android:layout_marginHorizontal="8dp"
+            android:clickable="true"
+            android:focusable="true">
+
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:onClick="onClick2"
+                android:src="@drawable/chatgpt" />
+
+        </LinearLayout>
+
+        <!-- TextView to Display Details -->
+        <TextView
+            android:id="@+id/tvDetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tap a logo to see details"
+            android:textSize="16sp"
+            android:textColor="#000000"
+            android:gravity="center"
+            android:padding="20dp"
+            android:background="#FFFFFF"
+            android:elevation="3dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="30dp"
+            android:layout_marginHorizontal="8dp" />
+
+    </LinearLayout>
+</ScrollView>
