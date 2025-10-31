@@ -1,3 +1,10 @@
+/*
+Develop an application to create 2 activities.
+First activity for reading Name, Designation and Basic Pay of an employee,
+Second activity for calculate the Net salary (Net Salary = (Basic Pay + HRA + DA) - PF)
+(Hint: HRA = 20% of Basic pay, DA = 30% of Basic pay, PF = 12% of Basic Pay)
+*/
+
 package com.example.employeesalarycalculator;
 
 import android.content.Intent;
