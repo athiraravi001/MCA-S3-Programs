@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8FAFC"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:gravity="center_horizontal">
+
+        <!-- Title Section -->
+        <TextView
+            android:text="Academic Result Calculator"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#1E293B"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp" />
+
+        <!-- Input Fields -->
+        <EditText
+            android:id="@+id/etName"
+            android:hint="Enter Student Name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="14dp"
+            android:padding="12dp"
+            android:textSize="16sp"
+            android:inputType="textPersonName"
+            android:backgroundTint="#94A3B8"
+            android:textColor="#0F172A"
+            android:textColorHint="#94A3B8" />
+
+        <EditText
+            android:id="@+id/etMark1"
+            android:hint="Enter Mark 1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:padding="12dp"
+            android:textSize="16sp"
+            android:inputType="number"
+            android:backgroundTint="#94A3B8"
+            android:textColor="#0F172A"
+            android:textColorHint="#94A3B8" />
+
+        <EditText
+            android:id="@+id/etMark2"
+            android:hint="Enter Mark 2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:padding="12dp"
+            android:textSize="16sp"
+            android:inputType="number"
+            android:backgroundTint="#94A3B8"
+            android:textColor="#0F172A"
+            android:textColorHint="#94A3B8" />
+
+        <EditText
+            android:id="@+id/etMark3"
+            android:hint="Enter Mark 3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:padding="12dp"
+            android:textSize="16sp"
+            android:inputType="number"
+            android:backgroundTint="#94A3B8"
+            android:textColor="#0F172A"
+            android:textColorHint="#94A3B8" />
+
+        <EditText
+            android:id="@+id/etMark4"
+            android:hint="Enter Mark 4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:padding="12dp"
+            android:textSize="16sp"
+            android:inputType="number"
+            android:backgroundTint="#94A3B8"
+            android:textColor="#0F172A"
+            android:textColorHint="#94A3B8" />
+
+        <!-- Next Button -->
+        <Button
+            android:id="@+id/btnNext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="#2563EB"
+            android:elevation="4dp"
+            android:onClick="onClick1"
+            android:text="Next ➜"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+</ScrollView>
