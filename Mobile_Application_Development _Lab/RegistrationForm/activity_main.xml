@@ -3,6 +3,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:fillViewport="true"
     android:background="#f5f6fa"
     android:padding="16dp">
 
@@ -29,13 +30,13 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Sign Up &amp; Join Us!"
-                android:textSize="28sp"
+                android:textSize="26sp"
                 android:textStyle="bold"
                 android:textColor="#1877F2"
                 android:layout_gravity="center_horizontal"
-                android:layout_marginBottom="24dp"/>
+                android:layout_marginBottom="24dp" />
 
-            <!-- Name Field -->
+            <!-- Name -->
             <EditText
                 android:id="@+id/rname"
                 android:layout_width="match_parent"
@@ -43,12 +44,21 @@
                 android:hint="Enter your name"
                 android:inputType="textPersonName"
                 android:padding="14dp"
-                android:backgroundTint="#d1d5db"
-                android:textSize="16sp"
-                android:layout_marginBottom="16dp"
-                android:background="@android:drawable/edit_text"/>
+                android:background="@android:drawable/edit_text"
+                android:layout_marginBottom="16dp" />
 
-            <!-- Email Field -->
+            <!-- Username -->
+            <EditText
+                android:id="@+id/runame"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter username"
+                android:inputType="text"
+                android:padding="14dp"
+                android:background="@android:drawable/edit_text"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Email -->
             <EditText
                 android:id="@+id/remail"
                 android:layout_width="match_parent"
@@ -56,19 +66,39 @@
                 android:hint="Enter your email"
                 android:inputType="textEmailAddress"
                 android:padding="14dp"
-                android:backgroundTint="#d1d5db"
-                android:textSize="16sp"
-                android:layout_marginBottom="16dp"
-                android:background="@android:drawable/edit_text"/>
+                android:background="@android:drawable/edit_text"
+                android:layout_marginBottom="16dp" />
 
-            <!-- Gender Selection -->
+            <!-- Password -->
+            <EditText
+                android:id="@+id/rpswrd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter password"
+                android:inputType="textPassword"
+                android:padding="14dp"
+                android:background="@android:drawable/edit_text"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Designation -->
+            <EditText
+                android:id="@+id/rdesignation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter your designation"
+                android:inputType="textPersonName"
+                android:padding="14dp"
+                android:background="@android:drawable/edit_text"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Gender -->
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Gender"
                 android:textStyle="bold"
-                android:layout_marginBottom="8dp"
-                android:textSize="16sp"/>
+                android:textSize="16sp"
+                android:layout_marginBottom="8dp" />
 
             <RadioGroup
                 android:layout_width="match_parent"
@@ -81,7 +111,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Male"
-                    android:buttonTint="#1877F2"/>
+                    android:buttonTint="#1877F2" />
 
                 <RadioButton
                     android:id="@+id/rfemale"
@@ -89,7 +119,7 @@
                     android:layout_height="wrap_content"
                     android:text="Female"
                     android:layout_marginStart="16dp"
-                    android:buttonTint="#1877F2"/>
+                    android:buttonTint="#1877F2" />
 
                 <RadioButton
                     android:id="@+id/rother"
@@ -97,34 +127,30 @@
                     android:layout_height="wrap_content"
                     android:text="Other"
                     android:layout_marginStart="16dp"
-                    android:buttonTint="#1877F2"/>
+                    android:buttonTint="#1877F2" />
             </RadioGroup>
 
-            <!-- DOB Field -->
+            <!-- Languages Known -->
+            <EditText
+                android:id="@+id/rlanguages"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Type languages you know (e.g., English, Hindi)"
+                android:inputType="text"
+                android:padding="14dp"
+                android:background="@android:drawable/edit_text"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Date of Birth -->
             <EditText
                 android:id="@+id/rdob"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Date of Birth (dd/mm/yyyy)"
+                android:hint="Enter your date of birth (DD/MM/YYYY)"
                 android:inputType="date"
                 android:padding="14dp"
-                android:backgroundTint="#d1d5db"
-                android:textSize="16sp"
-                android:layout_marginBottom="16dp"
-                android:background="@android:drawable/edit_text"/>
-
-            <!-- Password Field -->
-            <EditText
-                android:id="@+id/rpswrd"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="Enter password"
-                android:inputType="textPassword"
-                android:padding="14dp"
-                android:backgroundTint="#d1d5db"
-                android:textSize="16sp"
-                android:layout_marginBottom="16dp"
-                android:background="@android:drawable/edit_text"/>
+                android:background="@android:drawable/edit_text"
+                android:layout_marginBottom="16dp" />
 
             <!-- Privacy Checkbox -->
             <CheckBox
@@ -135,14 +161,12 @@
                 android:text="Agree Privacy and Policy"
                 android:textColor="#333333" />
 
-            <!-- Register Button -->
+            <!-- Submit -->
             <Button
-                android:id="@+id/rsubmit"
+                android:id="@+id/btnRegister"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:backgroundTint="#1877F2"
-                android:onClick="onClick"
-                android:padding="14dp"
                 android:text="Register"
                 android:textColor="#FFFFFF"
                 android:textSize="16sp" />
