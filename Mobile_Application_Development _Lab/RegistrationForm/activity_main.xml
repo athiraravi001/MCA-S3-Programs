@@ -132,7 +132,6 @@
             </RadioGroup>
 
             <!-- Languages Known -->
-
             <EditText
                 android:id="@+id/rlanguages"
                 android:layout_width="match_parent"
