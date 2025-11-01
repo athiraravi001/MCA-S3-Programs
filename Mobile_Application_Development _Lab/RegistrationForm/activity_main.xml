@@ -7,6 +7,7 @@
     android:background="#f5f6fa"
     android:padding="16dp">
 
+    <!-- Use one main LinearLayout for all form content -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -131,6 +132,7 @@
             </RadioGroup>
 
             <!-- Languages Known -->
+
             <EditText
                 android:id="@+id/rlanguages"
                 android:layout_width="match_parent"
@@ -140,6 +142,46 @@
                 android:padding="14dp"
                 android:background="@android:drawable/edit_text"
                 android:layout_marginBottom="16dp" />
+
+            <!--
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Languages Known"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:layout_marginBottom="8dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="16dp">
+
+                <CheckBox
+                    android:id="@+id/renglish"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="English"
+                    android:textColor="#333333"/>
+
+                <CheckBox
+                    android:id="@+id/rhindi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hindi"
+                    android:layout_marginStart="16dp"
+                    android:textColor="#333333"/>
+
+                <CheckBox
+                    android:id="@+id/rmalayalam"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Malayalam"
+                    android:layout_marginStart="16dp"
+                    android:textColor="#333333"/>
+            </LinearLayout>
+            -->
 
             <!-- Date of Birth -->
             <EditText
