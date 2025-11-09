@@ -2,9 +2,9 @@ import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
 data = {
-    "Name": ["Asha", "Arun", "Binu", "Devi", "Anu", "Jithu"],
-    "Department": ["CSE", "ECE", "CSE", "EEE", "CSE", "ECE"]
-}
+         "Name": ["Asha", "Arun", "Binu", "Devi", "Anu", "Jithu"],
+         "Department": ["CSE", "ECE", "CSE", "EEE", "CSE", "ECE"]
+       }
 df = pd.DataFrame(data)
 sns.countplot(x="Department", data=df, hue="Department")
 plt.xlabel('Department')
