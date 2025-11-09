@@ -32,6 +32,7 @@ print("Dictionary:", d, type(d))
 """
 print("\n=========================================\n")
 
+
 # Create a list with 4 elements and do the following in that list
 """
 a. Append an item to the list
@@ -91,3 +92,12 @@ mixed_keys_dict = {"name" : "Alice", 1 : "New York", "age" : 30}
 print("Mixed keys dictionary : ", mixed_keys_dict)
 integer_keys_dict = {1 : "apple", 2 : "banana", 3 : "cherry"}
 print("Integer keys dictionary : ", integer_keys_dict)
+
+
+# Convert the array to a list
+
+import numpy as np
+x = np.array([1,2,3,4,5,6,7,8,9,10])
+print("Array : ",x)
+y=x.tolist()
+print("List : ",y)
