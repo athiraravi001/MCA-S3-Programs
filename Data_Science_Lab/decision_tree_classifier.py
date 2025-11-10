@@ -43,5 +43,4 @@ plt.figure(figsize=(15, 10))  # Set figure size for clarity
 # class_names -> class labels for clarity
 # filled=True -> fill nodes with colors based on predicted class
 plot_tree(dt_clf, feature_names=iris.feature_names, class_names=iris.target_names, filled=True)
-
 plt.show()
