@@ -19,6 +19,7 @@ df = pd.DataFrame(data)
 df['Marks'] = df['Marks'].fillna(df['Marks'].mean())      # Fill missing values in 'Marks' column with the average
 print(df)
 
+
 # -----------------------------------------------------------------------------------------------------------------
 # Write a Python program to create a DataFrame with missing values and show how to remove rows and columns containing missing values using dropna().
 
