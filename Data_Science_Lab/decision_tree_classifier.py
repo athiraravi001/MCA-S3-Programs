@@ -13,7 +13,7 @@ iris = datasets.load_iris()           # Load the Iris dataset (features + target
 X = iris.data                         # Feature matrix (sepal/petal length & width)
 y = iris.target                       # Target labels (0=setosa, 1=versicolor, 2=virginica)
 
-# ======== Split the dataset (70% for traing and 30% for testing) ========
+# ======== Split the dataset (70% for training and 30% for testing) ========
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=42)
 
 # ======== Create and Train Decision Tree Classifier ========
@@ -43,4 +43,5 @@ plt.figure(figsize=(15, 10))  # Set figure size for clarity
 # class_names -> class labels for clarity
 # filled=True -> fill nodes with colors based on predicted class
 plot_tree(dt_clf, feature_names=iris.feature_names, class_names=iris.target_names, filled=True)
+
 plt.show()
