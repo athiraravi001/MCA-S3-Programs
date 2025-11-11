@@ -171,14 +171,14 @@
             android:background="#CFD8DC" />
 
         <Button
-            android:id="@+id/delete"
+            android:id="@+id/ce"
             android:layout_width="0dp"
             android:layout_height="70dp"
             android:layout_columnWeight="1"
             android:layout_margin="6dp"
-            android:background="#80CBC4"
-            android:text="C"
-            android:textSize="20sp" />
+            android:text="CE"
+            android:textSize="20sp"
+            android:background="#80CBC4" />
 
         <Button
             android:id="@+id/div"
@@ -190,15 +190,25 @@
             android:textSize="20sp"
             android:background="#B2DFDB" />
 
-        <!-- Fifth Row (Clear button spans all columns) -->
+        <!-- Fifth Row -->
         <Button
             android:id="@+id/equal"
-            android:layout_width="match_parent"
+            android:layout_width="273dp"
             android:layout_height="70dp"
-            android:layout_columnSpan="4"
+            android:layout_columnSpan="3"
             android:layout_margin="6dp"
             android:background="#FFAB91"
             android:text="="
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/delete"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_columnWeight="1"
+            android:layout_margin="6dp"
+            android:background="#80CBC4"
+            android:text="C"
             android:textSize="20sp" />
     </GridLayout>
 </LinearLayout>
